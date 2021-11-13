@@ -1,0 +1,17 @@
+body{
+    background-color:lavender;
+    font-family:Arial;
+}
+.container{
+    background-color:white;
+    width:600px;
+    margin:100px auto;
+    padding:50px;
+    border-radius: 10px;
+}
+h1{
+    font-weight:bold;
+}
+a{
+    text-decoration: none;
+}
