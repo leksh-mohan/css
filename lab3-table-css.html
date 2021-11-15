@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Table CSS">
+  <title>Table CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    .container {
+      margin: 50px auto;
+      border: 1px solid #ddd;
+      width: 80%;
+      padding: 5px;
+      color: #778899;
+      min-width: 900px;
+    }
+
+    .inside_container {
+      border: 10px solid #e6e6fa;
+    }
+
+    .top_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+    }
+
+    .top_icon {
+      flex: 1;
+    }
+
+    .top_icon span {
+      padding-left: 5px;
+    }
+
+    .top_dropdown {
+      border-bottom: 1px solid #e6e6fa;
+
+    }
+
+    .top_dropnumber {
+      padding-right: 15px;
+    }
+
+    .top_customer {
+      flex: 1;
+      font-size: x-large;
+    }
+
+    .top_search {
+      padding-left: 0px;
+    }
+
+    .top_search input {
+      border-width: 0px 0px 1px 0px;
+      border-color: #e6e6fa;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: auto;
+      width: 95%;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 15px;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    .action i {
+      padding: 0px 10px 0px 10px;
+      ;
+    }
+
+    .fa-eye {
+      color: #0000ff;
+    }
+
+    .fa-pencil {
+      color: #ffff00;
+    }
+
+    .fa-trash {
+      color: #ff0000;
+    }
+
+    .bottom_container {
+      display: flex;
+    }
+
+    .bottom_container div {
+      flex: 1;
+    }
+
+    .bottom_show {
+      padding: 20px 0px 0px 30px;
+    }
+
+    .bottom_right {
+      display: flex;
+      align-items: center;
+    }
+
+    .bottom_previous {
+      text-align: right;
+    }
+
+    ul {
+      flex: 1;
+    }
+
+    li {
+      display: inline;
+      list-style-type: none;
+
+      padding: 0px 5px 0px 5px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .bottom_pageselected {
+      background-color: #0000ff;
+      border-radius: 50%;
+    }
+
+    .bottom_pageselected a {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="inside_container">
+      <div class="top_container">
+        <div class="top_icon">
+          <span>Show</span>
+          <span class="top_dropdown">
+            <span class="top_dropnumber">5</span>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </span>
+          <span>entries</span>
+        </div>
+        <div class="top_customer">Customer <b>Details</b></div>
+        <div class="top_search">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <th>#</th>
+          <th>Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th>Address</th>
+          <th>City <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th>Pincode</th>
+          <th>Country <i class="fa fa-sort" aria-hidden="true"></i></th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Thomas Hardy</td>
+          <td>89 Chaiaroscuro Rd.</td>
+          <td>Portland</td>
+          <td>97219</td>
+          <td>USA</td>
+          <td class="action"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-pencil"
+              aria-hidden="true"></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Maria Anders</td>
+          <td>Obere Str. 57</td>
+          <td>Berlin</td>
+          <td>12209</td>
+          <td>Germany</td>
+          <td class="action"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-pencil"
+              aria-hidden="true"></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Fran Wilson</td>
+          <td>C/ Araquil, 67</td>
+          <td>Madrid</td>
+          <td>28023</td>
+          <td>Spain</td>
+          <td class="action"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-pencil"
+              aria-hidden="true"></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Dominique Perrier</td>
+          <td>25, rue Lauriston</td>
+          <td>Paris</td>
+          <td>75016</td>
+          <td>France</td>
+          <td class="action"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-pencil"
+              aria-hidden="true"></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Martin Blank</td>
+          <td>Via Monte Bianco 34</td>
+          <td>Turin</td>
+          <td>10100</td>
+          <td>Italy</td>
+          <td class="action"><i class="fa fa-eye" aria-hidden="true"></i><i class="fa fa-pencil"
+              aria-hidden="true"></i><i class="fa fa-trash" aria-hidden="true"></i></td>
+        </tr>
+      </table>
+      <div class="bottom_container">
+        <div class="bottom_show">Showing <b>5</b> out of <b>25</b> entries</div>
+        <div class="bottom_right">
+          <div class="bottom_previous"><a href="">Previous</a></div>
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li class="bottom_pageselected"><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+          </ul>
+          <div><a href="">Next</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
