@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Login</title>
+  <style type="text/css">
+    .container {
+      width: 80%;
+      display: flex;
+      margin: 50px auto;
+      padding: 20px 10px;
+      height: 500px;
+      min-width: 750px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .left_content,
+    .left_logo {
+      padding-bottom: 70px;
+    }
+
+    .left_content>div {
+      padding-bottom: 20px;
+    }
+
+    h1,
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .register_details {
+      color: #5f6468;
+      font-size: 13px;
+    }
+
+    h3 {
+      color: #5f6468;
+      font-size: 20px;
+    }
+
+    .register_button {
+      background-color: #20c997;
+      width: 125px;
+      text-align: center;
+      padding-top: 10px;
+      font-size: small;
+      height: 4px;
+    }
+
+    .container_welcome {
+      background-color: #343a40;
+      color: white;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+    }
+
+    .left_footer {
+      display: flex;
+      justify-content: space-between;
+      color: #5f6468;
+      font-size: small;
+    }
+
+    .container_login {
+      background-color: #20c997;
+      color: #ffffffcc;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container_login div {
+      padding-bottom: 20px;
+    }
+
+    input[name="login_email"] {
+      border: 0;
+      border-bottom: 1px solid #ffffffcc;
+      background-color: #20c997;
+      width: 100%;
+      padding: 0 0 10px;
+    }
+
+    input[name="login_password"] {
+      border: 0;
+      border-bottom: 1px solid #ffffffcc;
+      background-color: #20c997;
+      width: 100%;
+      padding: 0 0 10px;
+    }
+
+    ::placeholder {
+      color: #ffffffcc;
+    }
+
+    .login_button {
+      color: #20c997;
+      border: 1px solid #ffffff;
+    }
+
+    .forgot_pass {
+      font-size: small
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container_welcome">
+      <div class="left_logo"><i class="fa fa-slack fa-lg" aria-hidden="true"></i>ERC</div>
+      <div class="left_content">
+        <div>
+          <h1>Welcome</h1>
+          <h3>Register for an ERC account here.</h3>
+        </div>
+        <div class="register_details">Register for a free ERC account here and get access to the webshop, academy and
+          MyERC membership portal.
+          Melden Sie sich hier für ein kostenloses ERC-Konto an, Sie erhalten damit Zugang zum Webshop, zur Akademie und
+          zum Mitgliederportal.Schrijf u hier in voor een gratis ERC-account en krijg toegang tot de webshop, academy en
+          ledenportal.Opret en gratis ERC-konto og få adgang til webshop, akademi og medlemsportal. </div>
+        <div class="register_button">REGISTER HERE</div>
+      </div>
+      <div class="left_footer">
+        <div>CHOOSE LANGUAGE <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        <div>HELP CENTER</div>
+        <div>ERC WEBSITE</div>
+        <div>ERC WEBSHOP</div>
+      </div>
+    </div>
+    <div class="container_login">
+      <div class="content_right">
+        <div class="login_head">Or login to you account</div>
+        <div><input type="email" name="login_email" placeholder="Your Email"></div>
+        <div><input type="password" name="login_password" placeholder="Password"></div>
+        <div>
+          <button class="login_button" type="button">LOGIN</button>
+          <a class="forgot_pass">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
